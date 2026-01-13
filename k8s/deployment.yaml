@@ -14,7 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        # USE YOUR AUTHENTICATED USERNAME HERE
-        image: aakash22sharma/exp1_k8s:latest 
+        image: aakash22sharma/exp1_k8s:latest
         ports:
         - containerPort: 3000
