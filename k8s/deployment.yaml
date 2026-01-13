@@ -1,4 +1,3 @@
-@"
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: <YOUR_DOCKERHUB_USERNAME>/exp1_k8s:latest
+        # USE YOUR AUTHENTICATED USERNAME HERE
+        image: aakash22sharma/exp1_k8s:latest 
         ports:
         - containerPort: 3000
-"@ | Out-File -FilePath k8s\deployment.yaml -Encoding utf8
